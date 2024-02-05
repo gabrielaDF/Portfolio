@@ -10,8 +10,6 @@ const Certificate = () => {
       </h2>
       <div className="max-w-[70rem] h-auto">
         <div className="flex justify-center">
-          {" "}
-          {/* Centrar horizontalmente */}
           <img
             className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
             src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976603/Certificado%201.png"
@@ -25,8 +23,6 @@ const Certificate = () => {
         </div>
 
         <div className="flex justify-center mt-2">
-          {" "}
-          {/* Centrar horizontalmente */}
           <img
             className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
             src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976804/Certificado%203.png"

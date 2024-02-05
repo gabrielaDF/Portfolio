@@ -1,37 +1,43 @@
 import { FaCertificate } from "react-icons/fa6";
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React from "react";
 
-const Certificate = ({ imageUrls }) => {
-  const settings = {
-    customPaging: function (i) {
-      return (
-        <div className=" flex items-center   ">
-          <img src={imageUrls[i]} alt={`Thumbnail ${i + 1}`} />
-        </div>
-      );
-    },
-    dots: true,
-    dotsClass: "slick-dots slick-thumb",
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const Certificate = () => {
   return (
     <div className="ml-[20%] mr-auto max-w-screen-lg pb-10">
-      <h2 className="font-serif text-3xl text-white pt-16 flex items-center justify-center">
+      <h2 className="font-serif text-3xl text-white pt-16 flex">
         <FaCertificate className="mr-2" />
         Certificados
       </h2>
-      <div className=" w-[5%] h-[5%] ">
-        <Slider {...settings}>
-          {imageUrls.map((imageUrl, index) => (
-            <div key={index} className="flex items-center justify-center ">
-              <img src={imageUrl} alt={`Image ${index + 1}`} />
-            </div>
-          ))}
-        </Slider>
+      <div className="max-w-[70rem] h-auto">
+        <div className="flex justify-center">
+          {" "}
+          {/* Centrar horizontalmente */}
+          <img
+            className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976603/Certificado%201.png"
+            alt="certificado"
+          />
+          <img
+            className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976668/Certificado%202.png"
+            alt="certificado"
+          />
+        </div>
+
+        <div className="flex justify-center mt-2">
+          {" "}
+          {/* Centrar horizontalmente */}
+          <img
+            className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976804/Certificado%203.png"
+            alt="certificado"
+          />
+          <img
+            className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"
+            src="https://res.cloudinary.com/dn6wibef0/image/upload/v1706976949/Certificado%204.png"
+            alt="certificado"
+          />
+        </div>
       </div>
     </div>
   );

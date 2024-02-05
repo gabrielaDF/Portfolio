@@ -8,7 +8,7 @@ const Tecnologic = () => {
         Tecnologías
       </h2>
       <div>
-        <p className="flex items-center mt-3">
+        <p className="flex items-center justify-center mt-3">
           <a
             href="https://www.w3schools.com/css/"
             target="_blank"

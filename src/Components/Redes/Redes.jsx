@@ -7,7 +7,7 @@ const Redes = () => {
         <IoShareSocialSharp className="mr-2" />
         Redes
       </h1>
-      <div className="flex mt-4">
+      <div className="flex mt-4 justify-center">
         <a
           href="https://github.com/gabrielaDF"
           target="_blank"
@@ -16,18 +16,18 @@ const Redes = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original-wordmark.svg"
             alt="gitHub"
-            className="bg-fuchsia-200 rounded mr-4 w-24 h-24"
+            className="bg-fuchsia-200 rounded mr-4 w-24 h-24 transition-transform transform hover:scale-110"
           />
         </a>
         <a
-          href="https://github.com/gabrielaDF"
+          href="https://www.linkedin.com/in/gabriela-de-freitas-m/"
           target="_blank"
           rel="noreferrer"
         >
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original-wordmark.svg"
             alt="linkedin"
-            className="bg-fuchsia-200 rounded mr-4 w-24 h-24"
+            className="bg-fuchsia-200 rounded mr-4 w-24 h-24 transition-transform transform hover:scale-110"
           />
         </a>
       </div>

@@ -6,7 +6,6 @@ import { GiTechnoHeart } from "react-icons/gi";
 import { MdOutlineMarkunread } from "react-icons/md";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { FaCertificate } from "react-icons/fa6";
-import { GiHeartInside } from "react-icons/gi";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -62,12 +61,6 @@ const Navbar = () => {
             <MdWork />
             <h2 className="ml-2 text-white font-semibold font-serif">
               PROYECTOS
-            </h2>
-          </div>
-          <div className="flex items-center text-violet-300">
-            <GiHeartInside />
-            <h2 className="ml-2 text-white font-semibold font-serif">
-              HABILIDADES
             </h2>
           </div>
           <div className="flex items-center text-violet-300">

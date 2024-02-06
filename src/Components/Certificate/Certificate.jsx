@@ -8,7 +8,7 @@ const Certificate = () => {
         <FaCertificate className="mr-2" />
         Certificados
       </h2>
-      <div className="max-w-[70rem] h-auto">
+      <div className="max-w-[70rem] h-auto mt-8">
         <div className="flex justify-center">
           <img
             className="w-72 h-auto mr-20 transition-transform transform hover:scale-150"

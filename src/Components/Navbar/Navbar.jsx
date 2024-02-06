@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowMenu(window.innerWidth > 768); // Ajusta el valor 768 según sea necesario
+      setShowMenu(window.innerWidth > 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`fixed left-0 h-screen w-[18 %] bg-violet-950 lg-static transition-all duration-100 ${
+      className={`fixed left-0 h-screen w-[18 %] bg-blue-900 lg-static transition-all duration-100 ${
         showMenu ? "top-0 " : "-top-full"
       }`}
     >
@@ -40,7 +40,7 @@ const Navbar = () => {
         </h1>
       </div>
       <div
-        className={`bg-violet-900 p-8 rounded-tr-[100px] h-[70vh] flex-col justify-between gap-8 mt-2 ${
+        className={`bg-indigo-900 p-8  border-2 border-indigo-950 rounded-tr-[100px] h-[70vh] flex-col justify-between gap-8 mt-2 ${
           showMenu ? "overflow-y-hidden" : ""
         }`}
       >

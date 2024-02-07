@@ -4,7 +4,7 @@ const Redes = () => {
   return (
     <div className="ml-[20%] pb-8">
       <h1 className="font-serif  text-3xl text-white pt-16 flex">
-        <IoShareSocialSharp className="mr-2" />
+        <IoShareSocialSharp id="Redes" className="mr-2" />
         Redes
       </h1>
       <div className="flex mt-4 justify-center">

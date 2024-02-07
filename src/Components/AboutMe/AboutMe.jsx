@@ -3,7 +3,7 @@ const AboutMe = () => {
   return (
     <div className="ml-[18%]  text-blue-200">
       <h2 className="font-serif  text-3xl text-white pt-16 flex">
-        <FcBusinesswoman className="mr-2" />
+        <FcBusinesswoman className="mr-2" id="AboutMe" />
         Hola, Soy Gabriela
       </h2>
       <div className="text-center pr-16 pt-5">

@@ -4,7 +4,7 @@ const Tecnologic = () => {
   return (
     <div className="ml-[20%] pb-8 ">
       <h2 className="font-serif  text-3xl text-white pt-16 flex">
-        <GiTechnoHeart className="mr-2" />
+        <GiTechnoHeart id="Tecnologic" className="mr-2" />
         Tecnologías
       </h2>
       <div>

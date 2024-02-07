@@ -5,7 +5,7 @@ const Certificate = () => {
   return (
     <div className="ml-[20%] mr-auto max-w-screen-lg pb-10">
       <h2 className="font-serif text-3xl text-white pt-16 flex">
-        <FaCertificate className="mr-2" />
+        <FaCertificate id="Certificate" className="mr-2" />
         Certificados
       </h2>
       <div className="max-w-[70rem] h-auto mt-8">

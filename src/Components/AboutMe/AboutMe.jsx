@@ -9,11 +9,10 @@ const AboutMe = () => {
       <div className="text-center pr-16 pt-5">
         <p>
           Una apasionada Desarrolladora Full Stack con experiencia en el
-          emocionante mundo del desarrollo web. Originaria de Venezuela,y
-          actualmente viviendo en Colombia específicamente de Jamundí, Valle del
-          Cauca, mi viaje profesional me ha llevado a explorar las profundidades
-          de la ingeniería química(titulada) en el área de control de calidad y
-          creación de colores para el plástico.
+          emocionante mundo del desarrollo web. Originaria de Venezuela,
+          actualmente viviendo en Colombia, mi viaje profesional me ha llevado a
+          explorar las profundidades de la ingeniería química(titulada) en el
+          área de control de calidad y creación de colores para el plástico.
         </p>
         <br />
         <p>

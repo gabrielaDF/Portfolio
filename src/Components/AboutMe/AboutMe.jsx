@@ -1,4 +1,6 @@
 import { FcBusinesswoman } from "react-icons/fc";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 const AboutMe = () => {
   return (
     <div className="ml-[18%]  text-blue-200">
@@ -50,9 +52,16 @@ const AboutMe = () => {
         <p>
           ¡Conéctate conmigo y descubre cómo podemos colaborar juntos/as para
           hacer realidad tus ideas y objetivos digitales! <br />
-          📞 WhatsApp: +573229209491 <br />
-          📧 Email: defreitasgabi@gmail.com <br /> ¡Espero saber de ti pronto!
-          🚀
+          <br />
+          <div className=" flex justify-center items-center text-center">
+            <FaWhatsapp className="mr-2 text-green-500" />
+            WhatsApp : +573229209491
+          </div>
+          <div className=" flex justify-center items-center text-center">
+            <MdEmail className="mr-2 " />
+            Email: defreitasgabi@gmail.com
+          </div>
+          ¡Espero saber de ti pronto! 🚀
         </p>
       </div>
     </div>

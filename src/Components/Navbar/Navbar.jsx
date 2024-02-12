@@ -68,7 +68,7 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`fixed left-0 h-screen w-[18 %] bg-blue-900 lg-static transition-all duration-100`}
+      className={`fixed left-0 h-screen w-[18 %] bg-slate-900 lg-static transition-all duration-100`}
     >
       <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
         <div className="w-40 h-40 rounded-full mt-2  border-4 border-fuchsia-950">
@@ -83,7 +83,7 @@ const Navbar = () => {
         </h1>
       </div>
       <div
-        className={`bg-indigo-900 p-8  border-2 border-indigo-950 rounded-tr-[100px] h-[70vh] flex-col justify-between gap-8 mt-2 overflow-y-auto`}
+        className={`bg-slate-950 p-8  border-2 border-slate-900 rounded-tr-[100px] h-[70vh] flex-col justify-between gap-8 mt-2 overflow-y-auto`}
       >
         <nav className="flex flex-col gap-8">
           <div

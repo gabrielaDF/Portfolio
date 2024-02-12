@@ -53,10 +53,17 @@ const AboutMe = () => {
           ¡Conéctate conmigo y descubre cómo podemos colaborar juntos/as para
           hacer realidad tus ideas y objetivos digitales! <br />
           <br />
-          <div className=" flex justify-center items-center text-center">
-            <FaWhatsapp className="mr-2 text-green-500" />
-            WhatsApp : +573229209491
-          </div>
+          <a
+            href="https://wa.me/573229209491"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-blue-400"
+          >
+            <div className=" flex justify-center items-center text-center">
+              <FaWhatsapp className="mr-2 text-green-500" />
+              WhatsApp : +573229209491
+            </div>
+          </a>
           <div className=" flex justify-center items-center text-center">
             <MdEmail className="mr-2 " />
             Email: defreitasgabi@gmail.com

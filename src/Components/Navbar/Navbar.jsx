@@ -18,7 +18,6 @@ const Navbar = () => {
       const certificationsElement = document.getElementById("Certificate");
       const socialMediaElement = document.getElementById("Redes");
       const contactElement = document.getElementById("Contacto");
-      console.log(currentSection);
 
       if (
         window.scrollY < technologiesElement.offsetTop &&

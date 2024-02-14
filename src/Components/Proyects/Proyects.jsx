@@ -2,8 +2,8 @@ import { MdWork } from "react-icons/md";
 const Proyects = () => {
   return (
     <div className="ml-[20%]  text-blue-200  ">
-      <h2 className="font-serif  text-3xl text-white pt-16 flex">
-        <MdWork id="Proyects" className="mr-2" /> Proyectos
+      <h2 id="Proyects" className="font-serif  text-3xl text-white pt-16 flex">
+        <MdWork className="mr-2" /> Proyectos
       </h2>
       <div className="mt-16 flex flex-col items-center justify-center text-center">
         <h2 className="text-2xl mb-4 font-bold text-white">
@@ -34,6 +34,7 @@ const Proyects = () => {
             Ver Página Web
           </a>
         </div>
+
         <img
           src="https://res.cloudinary.com/dn6wibef0/image/upload/v1707253024/Drewili_1_q9rx3n.png"
           alt="Drewili"

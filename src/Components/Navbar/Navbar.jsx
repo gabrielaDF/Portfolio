@@ -18,14 +18,7 @@ const Navbar = () => {
       const certificationsElement = document.getElementById("Certificate");
       const socialMediaElement = document.getElementById("Redes");
       const contactElement = document.getElementById("Contacto");
-
-      console.log("ScrollY:", window.scrollY);
-      console.log("AboutMe:", aboutElement.offsetTop);
-      console.log("Tecnologic:", technologiesElement.offsetTop);
-      console.log("Proyects:", projectsElement.offsetTop);
-      console.log("Certificate:", certificationsElement.offsetTop);
-      console.log("Redes:", socialMediaElement.offsetTop);
-      console.log("Contacto:", contactElement.offsetTop);
+      console.log(currentSection);
 
       if (
         window.scrollY < technologiesElement.offsetTop &&
@@ -33,13 +26,13 @@ const Navbar = () => {
       ) {
         setCurrentSection("AboutMe");
       } else if (
-        window.scrollY >= technologiesElement.offsetTop &&
+        window.scrollY >= technologiesElement.offsetTop / 3 &&
         window.scrollY < projectsElement.offsetTop &&
         currentSection !== "Tecnologic"
       ) {
         setCurrentSection("Tecnologic");
       } else if (
-        window.scrollY >= projectsElement.offsetTop &&
+        window.scrollY >= projectsElement.offsetTop / 3 &&
         window.scrollY < certificationsElement.offsetTop &&
         currentSection !== "Proyects"
       ) {
@@ -52,12 +45,12 @@ const Navbar = () => {
         setCurrentSection("Certificate");
       } else if (
         window.scrollY >= socialMediaElement.offsetTop &&
-        window.scrollY < contactElement.offsetTop &&
+        window.scrollY < contactElement.offsetTop - 200 &&
         currentSection !== "Redes"
       ) {
         setCurrentSection("Redes");
       } else if (
-        window.scrollY >= contactElement.offsetTop &&
+        window.scrollY >= contactElement.offsetTop - 200 &&
         currentSection !== "Contacto"
       ) {
         setCurrentSection("Contacto");
@@ -98,7 +91,7 @@ const Navbar = () => {
             <a
               href="#AboutMe"
               className={`flex items-center underline mt-3  mr-6 hover:text-blue-500 ${
-                currentSection !== "AboutMe" ? "text-white" : "text-violet-300"
+                currentSection === "AboutMe" ? "text-white" : "text-violet-300"
               }`}
               onClick={() => handleNavigationClick("AboutMe")}
             >
@@ -124,7 +117,7 @@ const Navbar = () => {
             <a
               href="#Proyects"
               className={`flex items-center underline mt-3  mr-6 hover:text-blue-500 ${
-                currentSection === "Projects" ? "text-white" : "text-violet-300"
+                currentSection === "Proyects" ? "text-white" : "text-violet-300"
               }`}
               onClick={() => handleNavigationClick("Proyects")}
             >
@@ -146,11 +139,7 @@ const Navbar = () => {
               <h2 className=" text-base ml-2  font-serif">CERTIFICADOS</h2>
             </a>
           </div>
-          <div
-            className={`flex items-center ${
-              currentSection === "Redes" ? "text-white" : "text-violet-300"
-            }`}
-          >
+          <div>
             <a
               href="#Redes"
               className={`flex items-center underline mt-3 text-lg mr-6 hover:text-blue-500 ${
@@ -162,11 +151,7 @@ const Navbar = () => {
               <h2 className="text-base ml-2  font-serif">REDES SOCIALES</h2>
             </a>
           </div>
-          <div
-            className={`flex items-center ${
-              currentSection === "Contacto" ? "text-white" : "text-violet-300"
-            }`}
-          >
+          <div>
             <a
               href="#Contacto"
               className={`flex items-center underline mt-4 text-lg mr-6 hover:text-blue-500 ${

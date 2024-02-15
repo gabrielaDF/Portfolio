@@ -48,7 +48,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className="ml-[18%]  mt-16 pb-16">
+    <div className="ml-[20%] sm:ml-0 mt-16 pb-16">
       <div className="text-black">
         <h2
           id="Contacto"
@@ -56,7 +56,7 @@ const Contacto = () => {
         >
           <MdOutlineMarkunread className="mr-2" /> Contáctame
         </h2>
-        <div className="border border-gray-300 rounded p-8 w-full max-w-md ml-[30%]">
+        <div className="border border-gray-300 rounded p-8 w-full max-w-md mx-auto">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label

@@ -6,10 +6,22 @@ import { GiTechnoHeart } from "react-icons/gi";
 import { MdOutlineMarkunread } from "react-icons/md";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { FaCertificate } from "react-icons/fa6";
+import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState("AboutMe");
+  const [showMenu, setShowMenu] = useState(true);
+  useEffect(() => {
+    const handleResize = () => {
+      setShowMenu(window.innerWidth > 768); // Ajusta el valor 768 según sea necesario
+    };
 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       const aboutElement = document.getElementById("AboutMe");
@@ -68,7 +80,9 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`fixed left-0 h-screen w-[18 %] bg-slate-900 lg-static transition-all duration-100`}
+      className={`fixed left-0 h-screen w-[18 %] bg-slate-900 lg-static transition-all duration-100 ${
+        showMenu ? "top-0 " : "-top-full"
+      }`}
     >
       <div className="flex flex-col items-center justify-center p-8 gap-2 h-[30vh]">
         <div className="w-40 h-40 rounded-full mt-2  border-4 border-fuchsia-950">
@@ -167,6 +181,14 @@ const Navbar = () => {
           Creado por:
           <img src="/logoWhite.png" alt="logo" className="w-5 h-auto ml-2" />
         </div>
+      </div>
+      <div>
+        <button
+          onClick={() => setShowMenu(!showMenu)}
+          className="lg:hidden fixed left-4 top-4 text-2xl bg-chiliRed p-2.5 rounded-full text-white"
+        >
+          {showMenu ? <IoCloseSharp /> : <IoMenu />}
+        </button>
       </div>
     </div>
   );

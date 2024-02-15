@@ -2,16 +2,16 @@ import { GiTechnoHeart } from "react-icons/gi";
 
 const Tecnologic = () => {
   return (
-    <div className="ml-[20%] pb-8 ">
+    <div className="ml-[20%] pb-8 sm:ml-0 ">
       <h2
         id="Tecnologic"
-        className="font-serif  text-3xl text-white pt-16 flex"
+        className="font-serif text-3xl text-white pt-16 flex items-center"
       >
         <GiTechnoHeart className="mr-2" />
         Tecnologías
       </h2>
       <div>
-        <p className="flex items-center justify-center mt-3 ">
+        <p className="flex flex-wrap justify-center mt-3 ">
           <a
             href="https://www.w3schools.com/css/"
             target="_blank"

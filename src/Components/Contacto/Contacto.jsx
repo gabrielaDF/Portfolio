@@ -48,7 +48,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className="ml-[20%] sm:ml-0 mt-16 pb-16">
+    <div className="ml-[20%]  mt-16 pb-16">
       <div className="text-black">
         <h2
           id="Contacto"

@@ -2,7 +2,7 @@ import { GiTechnoHeart } from "react-icons/gi";
 
 const Tecnologic = () => {
   return (
-    <div className="ml-[20%] pb-8 sm:ml-0 ">
+    <div className="ml-[20%] pb-8  ">
       <h2
         id="Tecnologic"
         className="font-serif text-3xl text-white pt-16 flex items-center"

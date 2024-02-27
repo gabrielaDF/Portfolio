@@ -62,6 +62,16 @@ const Certificate = () => {
             )
           }
         />
+        <img
+          className="w-72 h-auto mr-4 mb-4 transition-transform transform hover:scale-150 cursor-pointer"
+          src="https://res.cloudinary.com/dn6wibef0/image/upload/v1708022006/Captura_de_pantalla_2024-02-15_124958_prq0sz.png"
+          alt="certificado"
+          onClick={() =>
+            openImage(
+              "https://res.cloudinary.com/dn6wibef0/image/upload/v1708022006/Captura_de_pantalla_2024-02-15_124958_prq0sz.png"
+            )
+          }
+        />
       </div>
       {selectedImage && (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75">

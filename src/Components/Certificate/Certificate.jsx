@@ -72,6 +72,26 @@ const Certificate = () => {
             )
           }
         />
+        <img
+          className="w-72 h-auto mr-4 mb-4 transition-transform transform hover:scale-150 cursor-pointer"
+          src="https://res.cloudinary.com/dn6wibef0/image/upload/v1716830537/certificado_HTML_y1xvow.png"
+          alt="certificado HTML"
+          onClick={() =>
+            openImage(
+              "https://res.cloudinary.com/dn6wibef0/image/upload/v1716830537/certificado_HTML_y1xvow.png"
+            )
+          }
+        />
+        <img
+          className="w-72 h-auto mr-4 mb-4 transition-transform transform hover:scale-150 cursor-pointer"
+          src="https://res.cloudinary.com/dn6wibef0/image/upload/v1716830554/certificado_javascript_bvac28.png"
+          alt="certificado JavaScript"
+          onClick={() =>
+            openImage(
+              "https://res.cloudinary.com/dn6wibef0/image/upload/v1716830554/certificado_javascript_bvac28.png"
+            )
+          }
+        />
       </div>
       {selectedImage && (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75">
